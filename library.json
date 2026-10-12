@@ -1,0 +1,34 @@
+{
+  "name": "fips203-mlkem-esp32",
+  "version": "0.1.0",
+  "description": "ML-KEM (FIPS 203) post-quantum key encapsulation for ESP32. All three security levels (ML-KEM-512/768/1024). Ported from the mlkem-native reference implementation with hardware RNG support and a stack-lean configuration.",
+  "keywords": "post-quantum, cryptography, key-encapsulation, kem, mlkem, kyber, fips203, pqc, lattice, mlkem512, mlkem768, mlkem1024",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "The fips203-mlkem-esp32 authors",
+      "maintainer": true
+    }
+  ],
+  "frameworks": "arduino",
+  "platforms": "espressif32",
+  "headers": [
+    "MLKEM.h",
+    "MLKEM512.h",
+    "MLKEM768.h",
+    "MLKEM1024.h",
+    "MLKEM_NVS.h",
+    "mlkem_esp32.h",
+    "mlkem_native.h"
+  ],
+  "export": {
+    "exclude": [
+      "scripts/.acvp-data"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ANONYMIZED-FOR-REVIEW/fips203-mlkem-esp32.git"
+  },
+  "homepage": "https://github.com/ANONYMIZED-FOR-REVIEW/fips203-mlkem-esp32"
+}
